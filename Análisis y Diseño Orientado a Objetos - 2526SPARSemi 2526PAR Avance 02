@@ -1,0 +1,94 @@
+Análisis y Diseño Orientado a Objetos - 2526SPARSemi 2526PAR
+Avance 02 
+
+Antonio De Jesús Almaraz Alvarado
+Fecha de entrega: 18 de noviembre de 2026
+
+Participantes Del Proyecto 
+Antonio De Jesús Almaraz Alvarado 
+
+
+Requerimientos Evolutivos
+Los requerimientos evolutivos permiten definir cómo el sistema puede crecer y adaptarse a nuevas necesidades en el futuro.
+Requerimiento 1: Reportes de calificaciones por curso
+Descripción: El sistema debe generar reportes que agrupen las calificaciones de los estudiantes por curso o materia. Objetivo: Facilitar al profesor y a la institución el análisis del rendimiento académico por grupo. Beneficio: Mejora la gestión escolar al contar con información consolidada y exportable.
+ Requerimiento 2: Integrar autenticación de usuarios
+Descripción: El sistema debe permitir que los usuarios (profesores y estudiantes) se autentiquen mediante credenciales únicas. Objetivo: Garantizar la seguridad y privacidad de la información académica. Beneficio: Evita accesos no autorizados y asegura que cada usuario solo pueda realizar las acciones correspondientes a su rol.
+ Importancia de los requerimientos evolutivos
+Estos requerimientos no forman parte del núcleo inicial del sistema, pero son fundamentales para su escalabilidad y seguridad. Al incluirlos en la planeación, se demuestra que el proyecto puede crecer más allá de su versión básica y atender necesidades reales de una institución educativa.
+
+Inception (Visión Inicial del Proyecto)
+La fase de Inception permite establecer la visión inicial del sistema, delimitando su propósito, alcance y restricciones.
+
+
+Alcance El sistema se centra únicamente en la gestión de notas escolares, es decir: registro de estudiantes, registro de materias, asignación de calificaciones y consulta de promedios. No incluye módulos externos como control de asistencia, pagos o administración institucional.
+
+El sistema estará limitado a la gestión de notas escolares, incluyendo:
+•	Registro de estudiantes.
+•	Registro de materias.
+•	Asignación de calificaciones.
+•	Consulta de promedios.
+
+Aunque su alcance inicial es reducido, el diseño es escalable y puede adaptarse a otros sistemas educativos más complejos (por ejemplo: gestión de cursos completos, reportes institucionales, integración con plataformas académicas).
+ Restricciones del Sistema de Gestión de Notas Escolares Las restricciones delimitan el alcance real del sistema y aseguran que el desarrollo se mantenga dentro de parámetros claros y funcionales.
+
+
+diagrama UML. Sobre el proyecto de Sistema de gestión de notas escolares
+
+ 
+
+Casos de Estudio
+Los casos de estudio permiten ejemplificar cómo funciona el sistema en situaciones reales, mostrando la interacción de los actores y objetos definidos en los diagramas UML.
+ Caso de Estudio 1: Registro de estudiante y asignación de calificación
+Escenario: El profesor registra al estudiante Juan Pérez en la materia Matemáticas.
+Acción: El profesor asigna una calificación de 85 en la materia.
+Resultado esperado: El sistema crea una instancia de la clase Calificación, vinculada al estudiante y a la materia, y guarda el valor.
+ Caso de Estudio 2: Consulta de promedio por estudiante
+Escenario: El estudiante Juan Pérez consulta su promedio en el sistema.
+Acción: El sistema calcula el promedio de todas las calificaciones registradas para el estudiante.
+Resultado esperado: El sistema muestra el promedio general (por ejemplo, 85.0) en pantalla.
+ 
+Caso de Estudio 3: Reporte de calificaciones por curso (requerimiento evolutivo)
+•	Escenario: El profesor solicita un reporte de calificaciones de la materia Matemáticas.
+•	Acción: El sistema genera un listado con los estudiantes inscritos y sus respectivas calificaciones.
+•	Resultado esperado: El reporte se exporta en formato PDF y se entrega al profesor.
+ 
+Importancia de los casos de estudio
+Estos ejemplos permiten validar que el sistema cumple con los requerimientos funcionales y evolutivos, además de demostrar cómo los actores interactúan con el sistema en situaciones concretas.
+
+
+
+Cronograma de actividades
+Semana	Actividad	Entregable
+Semana 1	Definición del proyecto y actores principales	Documento inicial con descripción del sistema
+Semana 2	Elaboración de diagramas UML (casos de uso y clases)	Diagramas UML en formato imagen/PDF
+Semana 3	Desarrollo del diagrama de secuencia y análisis de requerimientos evolutivos	Diagramas UML + documento de requerimientos
+Semana 4	Implementación de clases en código fuente	Código en repositorio remoto (GitHub/GitLab)
+Semana 5	Documentación formal (Inception, Casos de Estudio, Restricciones)	Documento Word/PDF con estructura académica
+Semana 6	Integración de2 todos los entregables y revisión final	Proyecto completo con diagramas, código y documentación
+		
+
+
+
+Introducción
+El presente proyecto tiene como propósito aplicar los conocimientos adquiridos en análisis y diseño orientado a objetos (O.O.) mediante la construcción de un sistema denominado Sistema de Gestión de Notas Escolares. Este sistema busca facilitar el registro de estudiantes, materias y calificaciones, así como la consulta de promedios, ofreciendo una solución organizada y escalable para la administración académica.
+La metodología utilizada incluye la elaboración de diagramas UML (casos de uso, clases y secuencia), definición de requerimientos evolutivos, implementación en código fuente y planeación final con entregables claros.
+Desarrollo
+El desarrollo del proyecto se estructuró en diferentes fases:
+1.	Definición del proyecto: Se estableció el alcance inicial limitado a notas escolares, con posibilidad de expansión a otros sistemas educativos.
+2.	Casos de uso: Se identificaron las principales funcionalidades: registrar estudiantes, registrar mater
+3.	ias, asignar calificaciones y consultar promedios.
+4.	Diagramas UML: Se elaboraron diagramas de casos de uso, clases y secuencia para representar la interacción entre actores y objetos.
+5.	Requerimientos evolutivos: Se definieron mejoras futuras como reportes de calificaciones por curso y autenticación de usuarios.
+6.	Inception: Se estableció la visión inicial, delimitando propósito, alcance y restricciones específicas del sistema.
+7.	Casos de estudio: Se documentaron ejemplos prácticos que validan el funcionamiento del sistema en escenarios reales.
+8.	Implementación en código fuente: Se desarrollaron las clases principales (Estudiante, Materia, Calificación) y una clase principal para pruebas.
+9.	Planeación final: Se organizó un cronograma con entregables semanales, incluyendo diagramas, documentación y código en repositorio remoto.
+
+
+Conclusión
+El proyecto Sistema de Gestión de Notas Escolares demuestra la aplicación práctica de los conceptos de análisis y diseño orientado a objetos, integrando diagramas UML, requerimientos evolutivos, casos de estudio y código fuente funcional.
+La estructura planteada garantiza un sistema claro, escalable y seguro, que cumple con los objetivos académicos y puede evolucionar hacia una solución más completa en el ámbito educativo.
+
+
+
