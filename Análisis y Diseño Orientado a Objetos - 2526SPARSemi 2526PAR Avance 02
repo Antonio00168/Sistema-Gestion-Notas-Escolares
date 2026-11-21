@@ -8,6 +8,32 @@ Participantes Del Proyecto
 Antonio De Jesús Almaraz Alvarado 
 
 
+Introducción
+El presente proyecto tiene como propósito aplicar los conocimientos adquiridos en análisis y diseño orientado a objetos (O.O.) mediante la construcción de un sistema denominado Sistema de Gestión de Notas Escolares. Este sistema busca facilitar el registro de estudiantes, materias y calificaciones, así como la consulta de promedios, ofreciendo una solución organizada y escalable para la administración académica.
+La metodología utilizada incluye la elaboración de diagramas UML (casos de uso, clases y secuencia), definición de requerimientos evolutivos, implementación en código fuente y planeación final con entregables claros.
+
+
+
+Desarrollo
+El desarrollo del proyecto se estructuró en diferentes fases:
+1.	Definición del proyecto: Se estableció el alcance inicial limitado a notas escolares, con posibilidad de expansión a otros sistemas educativos.
+2.	Casos de uso: Se identificaron las principales funcionalidades: registrar estudiantes, registrar mater
+3.	ias, asignar calificaciones y consultar promedios.
+4.	Diagramas UML: Se elaboraron diagramas de casos de uso, clases y secuencia para representar la interacción entre actores y objetos.
+5.	Requerimientos evolutivos: Se definieron mejoras futuras como reportes de calificaciones por curso y autenticación de usuarios.
+6.	Inception: Se estableció la visión inicial, delimitando propósito, alcance y restricciones específicas del sistema.
+7.	Casos de estudio: Se documentaron ejemplos prácticos que validan el funcionamiento del sistema en escenarios reales.
+8.	Implementación en código fuente: Se desarrollaron las clases principales (Estudiante, Materia, Calificación) y una clase principal para pruebas.
+9.	Planeación final: Se organizó un cronograma con entregables semanales, incluyendo diagramas, documentación y código en repositorio remoto.
+
+
+El Alcance Del sistema se centra únicamente en la gestión de notas escolares, es decir: registro de estudiantes, registro de materias, asignación de calificaciones y consulta de promedios. No incluye módulos externos como control de asistencia, pagos o administración institucional.
+El sistema estará limitado a la gestión de notas escolares, incluyendoRelación del Proyecto con el Proceso Unificado
+El desarrollo del Sistema de Gestión de Notas Escolares se realizará siguiendo los principios del Proceso Unificado (Unified Process), una metodología de desarrollo de software que promueve la construcción de sistemas mediante iteraciones y una comprensión detallada de los requisitos del usuario. :
+
+Requerimiento Evolutivo
+El proyecto se considera evolutivo debido a que puede ampliarse conforme surjan nuevas necesidades dentro de la institución educativa.
+
 Requerimientos Evolutivos
 Los requerimientos evolutivos permiten definir cómo el sistema puede crecer y adaptarse a nuevas necesidades en el futuro.
 Requerimiento 1: Reportes de calificaciones por curso
@@ -17,23 +43,70 @@ Descripción: El sistema debe permitir que los usuarios (profesores y estudiante
  Importancia de los requerimientos evolutivos
 Estos requerimientos no forman parte del núcleo inicial del sistema, pero son fundamentales para su escalabilidad y seguridad. Al incluirlos en la planeación, se demuestra que el proyecto puede crecer más allá de su versión básica y atender necesidades reales de una institución educativa.
 
-Inception (Visión Inicial del Proyecto)
-La fase de Inception permite establecer la visión inicial del sistema, delimitando su propósito, alcance y restricciones.
+
+Entre las posibles evoluciones futuras se encuentran:
+
+Control de asistencia.
+Generación de reportes académicos.
+Historial escolar.
+Sistema de usuarios y roles.
+Portal web para estudiantes.
+Emisión de constancias académicas.
+Notificaciones automáticas de desempeño.
+Esta característica permite que el sistema continúe creciendo sin necesidad de ser reemplazado completamente.
+
+Gestión del Cambio
+Durante el desarrollo pueden surgir modificaciones en los requisitos inicialmente definidos.
+
+Por ejemplo:
+
+Nuevas reglas para el cálculo de promedios.
+Inclusión de semestres o grupos.
+Nuevos formatos de reportes.
+Requisitos de seguridad adicionales.
+La gestión del cambio permitirá analizar, documentar e incorporar estas modificaciones de manera controlada, evitando afectar la estabilidad del sistema.
+
+Agile Unified Process (AUP)
+El proyecto puede desarrollarse aplicando conceptos de Agile Unified Process, adoptando iteraciones cortas para construir funcionalidades progresivamente.
+
+Cada iteración podrá incluir:
+
+Diseño de funcionalidades.
+Implementación.
+Pruebas.
+Retroalimentación.
+Esto permitirá obtener resultados visibles desde etapas tempranas y mejorar continuamente el producto.
+
+Unified Process (UP)
+El Sistema de Gestión de Notas Escolares sigue los principios fundamentales del Unified Process:
+
+Desarrollo dirigido por casos de uso.
+Desarrollo iterativo e incremental.
+8Gestión de riesgos.
+Enfoque centrado en la arquitectura.
+Gracias a este enfoque, el proyecto podrá evolucionar de forma organizada, asegurando la calidad del software y la correcta satisfacción de las necesidades académicas de la institución.
 
 
-Alcance El sistema se centra únicamente en la gestión de notas escolares, es decir: registro de estudiantes, registro de materias, asignación de calificaciones y consulta de promedios. No incluye módulos externos como control de asistencia, pagos o administración institucional.
 
-El sistema estará limitado a la gestión de notas escolares, incluyendo:
-•	Registro de estudiantes.
-•	Registro de materias.
-•	Asignación de calificaciones.
-•	Consulta de promedios.
-
-Aunque su alcance inicial es reducido, el diseño es escalable y puede adaptarse a otros sistemas educativos más complejos (por ejemplo: gestión de cursos completos, reportes institucionales, integración con plataformas académicas).
- Restricciones del Sistema de Gestión de Notas Escolares Las restricciones delimitan el alcance real del sistema y aseguran que el desarrollo se mantenga dentro de parámetros claros y funcionales.
-
-
-diagrama UML. Sobre el proyecto de Sistema de gestión de notas escolares
+Diagrama de Caso de Uso
+Plain Text
++-------------------+
+| Administrador |
++-------------------+
+|
+-----------------------------------------
+| | | |
+V V V V
+ 
+Registrar Registrar Registrar Consultar
+Estudiante Materia Calificación Promedio
+ 
+^
+|
+Estudiante
+|
+V
+Consultar Notas
 
  
 
@@ -69,21 +142,6 @@ Semana 6	Integración de2 todos los entregables y revisión final	Proyecto compl
 		
 
 
-
-Introducción
-El presente proyecto tiene como propósito aplicar los conocimientos adquiridos en análisis y diseño orientado a objetos (O.O.) mediante la construcción de un sistema denominado Sistema de Gestión de Notas Escolares. Este sistema busca facilitar el registro de estudiantes, materias y calificaciones, así como la consulta de promedios, ofreciendo una solución organizada y escalable para la administración académica.
-La metodología utilizada incluye la elaboración de diagramas UML (casos de uso, clases y secuencia), definición de requerimientos evolutivos, implementación en código fuente y planeación final con entregables claros.
-Desarrollo
-El desarrollo del proyecto se estructuró en diferentes fases:
-1.	Definición del proyecto: Se estableció el alcance inicial limitado a notas escolares, con posibilidad de expansión a otros sistemas educativos.
-2.	Casos de uso: Se identificaron las principales funcionalidades: registrar estudiantes, registrar mater
-3.	ias, asignar calificaciones y consultar promedios.
-4.	Diagramas UML: Se elaboraron diagramas de casos de uso, clases y secuencia para representar la interacción entre actores y objetos.
-5.	Requerimientos evolutivos: Se definieron mejoras futuras como reportes de calificaciones por curso y autenticación de usuarios.
-6.	Inception: Se estableció la visión inicial, delimitando propósito, alcance y restricciones específicas del sistema.
-7.	Casos de estudio: Se documentaron ejemplos prácticos que validan el funcionamiento del sistema en escenarios reales.
-8.	Implementación en código fuente: Se desarrollaron las clases principales (Estudiante, Materia, Calificación) y una clase principal para pruebas.
-9.	Planeación final: Se organizó un cronograma con entregables semanales, incluyendo diagramas, documentación y código en repositorio remoto.
 
 
 Conclusión
