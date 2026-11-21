@@ -86,9 +86,96 @@ Beneficios para la Institución
 Mejor administración de la información académica.
 Mayor confiabilidad en los registros escolares.
 Disponibilidad de información para la toma de decisiones.
+
 Justificación
 El Sistema de Gestión de Notas Escolares constituye una solución viable para modernizar el manejo de información académica dentro de una institución educativa.
 
 La automatización de procesos permitirá incrementar la eficiencia operativa, mejorar la calidad de los registros y brindar un servicio más confiable a docentes y estudiantes.
+
+Debido a los beneficios obtenidos en términos de organización, precisión y disponibilidad de información, la implementación de este proyecto representa una inversión tecnológica con impacto positivo en la gestión educativa.
+El caso de uso sigue el formato completamente vestido propuesto por Alistair Cockburn, donde cada sección (alcance, nivel, actor principal, stakeholders, precondiciones, escenario principal y extensiones) se 8documenta con precisión. Este formato permite capturar tanto los requerimientos funcionales como los no funcionales, y facilita la trazabilidad entre los artefactos del Unified Process (UP): modelo de negocio, requisitos y diseño. 
+2.	Perspectiva del contenido 
+La perspectiva es actor-sistema, centrada en el Cajero como actor principal que interactúa con el sistema POS para cumplir el 2objetivo del Cliente. El caso de uso se ubica en el nivel objetivo del usuario, pues describe un proceso completo de negocio elemental (EBP). El modelo de casos de uso dentro del UP actúa como contrato entre las partes interesadas, garantizando que los intereses del cliente, la empresa y los sistemas externos estén satisfechos. 
+3.	Observaciones importantes 
+•	El caso UC1 es arquitectónicamente significativo, base para otros casos como Handle Payment o Manage Inventory. 
+•	La estructura numerada (1–10) del flujo principal y la notación de extensiones (3a, 3b, *a, *b) permiten una lectura clara y sistemática. 
+•	Los flujos alternos representan excepciones y variaciones del proceso principal, esenciales para la robustez del sistema. 
+•	Los requerimientos especiales (por ejemplo, interfaz táctil, tiempo de respuesta, internacionalización) se registran junto al caso de uso, siguiendo las recomendaciones del UP. 
+4.	Notación de flujos alternos 
+Según la lectura, las extensiones se numeran respecto al paso del flujo principal: 
+•	3a, 3b, 3c… indican variaciones específicas del paso 3. 
+•	\a, \b…** indican condiciones que pueden ocurrir en cualquier momento del escenario. 
+Cada extensión tiene dos partes: Condición y Manejo. Ejemplo del flujo alterno A1 (producto inexistente): 
+Conclusión 
+ 
+• 	El caso de uso UC1: Process Sale ejemplifica la aplicación del Unified Process para conectar los niveles de negocio, requisitos y diseño. Su formato estructurado, perspectiva centrada en el actor y notación clara de flujos alternos lo convierten en un modelo ideal para documentar requerimientos funcionales y garantizar la trazabilidad del sistema. 
+
+
+Casos de Uso
+Los casos de uso representan las funcionalidades que el sistema ofrecerá a los usuarios.
+
+Para este proyecto, algunos casos de uso identificados son:
+
+CU01. Registrar Estudiante
+Permite almacenar la información de un nuevo estudiante dentro del sistema.
+
+CU02. Registrar Materia
+Permite crear y administrar las materias disponibles.
+
+CU03. Registrar Calificación
+Permite capturar las notas obtenidas por un estudiante en una materia específica.
+
+CU04. Consultar Calificaciones
+Permite visualizar las calificaciones registradas.
+
+CU05. Consultar Promedio
+Permite calcular y mostrar automáticamente el promedio de un estudiante.
+
+Los casos de uso facilitan la comprensión de las necesidades del sistema desde la perspectiva de los usuarios finales.
+
+Requerimiento Evolutivo
+El proyecto se considera evolutivo debido a que puede ampliarse conforme surjan nuevas necesidades dentro de la institución educativa.
+
+Entre las posibles evoluciones futuras se encuentran:
+
+Control de asistencia.
+Generación de reportes académicos.
+Historial escolar.
+Sistema de usuarios y roles.
+Portal web para estudiantes.
+Emisión de constancias académicas.
+Notificaciones automáticas de desempeño.
+Esta característica permite que el sistema continúe creciendo sin necesidad de ser reemplazado completamente.
+
+Gestión del Cambio
+Durante el desarrollo pueden surgir modificaciones en los requisitos inicialmente definidos.
+
+Por ejemplo:
+
+Nuevas reglas para el cálculo de promedios.
+Inclusión de semestres o grupos.
+Nuevos formatos de reportes.
+Requisitos de seguridad adicionales.
+La gestión del cambio permitirá analizar, documentar e incorporar estas modificaciones de manera controlada, evitando afectar la estabilidad del sistema.
+
+Agile Unified Process (AUP)
+El proyecto puede desarrollarse aplicando conceptos de Agile Unified Process, adoptando iteraciones cortas para construir funcionalidades progresivamente.
+
+Cada iteración podrá incluir:
+
+Diseño de funcionalidades.
+Implementación.
+Pruebas.
+Retroalimentación.
+Esto permitirá obtener resultados visibles desde etapas tempranas y mejorar continuamente el producto.
+
+Unified Process (UP)
+El Sistema de Gestión de Notas Escolares sigue los principios fundamentales del Unified Process:
+
+Desarrollo dirigido por casos de uso.
+Desarrollo iterativo e incremental.
+Gestión de riesgos.
+Enfoque centrado en la arquitectura.
+Gracias a este enfoque, el proyecto podrá evolucionar de forma organizada, asegurando la calidad del software y la correcta satisfacción de las necesidades académicas de la institución.
 
 Debido a los beneficios obtenidos en términos de organización, precisión y disponibilidad de información, la implementación de este proyecto representa una inversión tecnológica con impacto positivo en la gestión educativa.
